@@ -1,0 +1,17 @@
+.box {
+width: 400px;
+height:700px;
+text-align: center;
+font-family: 'Jua', sans-serif;
+background-color:lemonchiffon;
+color:slategray;
+}
+
+a {
+    
+    font-family: 'Jua', sans-serif;
+    color:slategray;
+    text-decoration-line: none ;
+    
+}
+
