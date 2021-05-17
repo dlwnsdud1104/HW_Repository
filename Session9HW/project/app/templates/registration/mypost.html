@@ -1,0 +1,48 @@
+{%extends 'base.html' %}
+
+{% block css %} {% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'mypost.css' %}">
+{% endblock %}
+
+{% block box %}
+
+<div class="box">
+    <div class="head">
+        <br>
+        <h1>To-do list</h1>
+    </div>
+    <div class="list">
+        <ul>
+            <div class="middle">
+                {% for post in myposts %}
+                <li>
+                    <a href="{% url 'detail' post.pk %}">{{ post.title }} {{ post.date|timeuntil }}</a>
+                </li>
+                {% endfor %}
+            </div>
+        </ul>
+    </div>
+</div>
+
+<br>
+
+<div class="comment">
+    <div class="head">
+        <br>
+        <h1>Comment list</h1>
+    </div>
+    <div class="list">
+        <ul>
+            <div class="middle">
+                {% for comment in mycomments %}
+                <li>
+                    {{ comment.content}}
+                </li>
+                {% endfor %}
+            </div>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
