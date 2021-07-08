@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title> 📝 To-do list </title>
+</head>
+
+<body>
+    <div class="frame">
+        <div id="myDIV" class="header">
+            <h2 style="color:#f199bc;"> To Do List</h2>
+            <!-- Trigger/Open The Modal -->
+            <button style="border: none; background-color: #99f19e; font-size: 30px" id="myBtn">💭</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p> Hello World!</p>
+                </div>
+
+            </div>
+            <br>
+            <br>
+
+            <div class="inputBox" style="color:#f6ea8c;">
+                <input type="text" id="myInput" placeholder="Title">
+                <button onclick="newElement()" class="addBtn">Add</button>
+            </div>
+        </div>
+
+
+        <br>
+
+        <ul id="myUL">
+            <li>
+                <span> Add more 📝</span>
+                <span class="close">&#215;</span>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="ex1.js"></script>
+
+</html>
